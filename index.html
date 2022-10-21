@@ -13,32 +13,11 @@
     <div class="nav-bar"></div>
 
     <div id="app">
-        <div class="product">
-            <div class="product-image">
-                <img v-bind:src="image" alt="Green Socks">
-            </div>
-            <div class="product-info">
-                <h1>{{product}}</h1>
-                <p v-show="inStock">In Stock</p>
-                <p v-show="!inStock">Out of Stock</p>
-
-                <ul class="details">
-                    <li v-for="detail in details">{{detail}}</li>
-                </ul>
-
-                <div class="variants" v-for="variant in variants" :key="variant.variantId">
-                    <p @mouseover="updateProduct(variant.variantImage)">{{variant.variantColor}}</p>
-                </div>
-
-                <button class="cart-button" v-on:click="addToCart">Add to cart</button>
-
-                <div class="cart">
-                    <p>Cart ({{cart}})</p>
-                </div>
-
-            </div>
-
+        <div class="cart">
+            <p>Cart ({{cart}})</p>
         </div>
+        <product :premiun="premiun" @add-to-cart="updateCart"></product>
+        <product :premiun="premiun" @add-to-cart="updateCart"></product>
     </div>
     
     <script src="main.js"></script>

@@ -59,7 +59,14 @@
     cursor: pointer;
 }
 
+.cart-button:hover {
+    color: darkblue;
+    background-color: lightslategray;
+}
+
 .cart {
+    position: fixed;
+    right: 80px;
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -68,6 +75,8 @@
     width: 100px;
     height: 50px;
     border: 1px solid rgba(10, 20, 15, 0.2);
+    box-shadow: 0 0 2px 1px rgba(10, 20, 15, 0.2);
+    font-size: 1.2rem;
 }
 
 .cart p {
@@ -75,4 +84,20 @@
     padding: 0;
     text-align: center;
     display: flex;
+}
+
+#color-box {
+    width: 50px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.disableButton {
+    background-color: aliceblue;
+    cursor: not-allowed;
+}
+
+.outOfStock {
+    text-decoration: line-through;
+    color: red;
 }
