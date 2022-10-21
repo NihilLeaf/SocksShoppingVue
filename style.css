@@ -12,6 +12,7 @@
 .product {
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     font-size: 1.5rem;
     padding-top: 60px;
 }
@@ -30,6 +31,7 @@
 .product-image img {
     width: 30vw;
     border: 1px solid rgba(10, 20, 15, 0.2);
+    box-shadow: 0 0 2px 1px rgba(10, 20, 15, 0.2);
 }
 
 .product-info p {
@@ -100,4 +102,91 @@
 .outOfStock {
     text-decoration: line-through;
     color: red;
+}
+
+.form .input-review {
+    display: block;
+    margin: 0 auto;
+    width: 80vw;
+    height: 8vh;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border: 1px solid rgba(10, 20, 15, 0.2);
+    outline: none;
+}
+
+.form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0px auto;
+}
+
+.form p {
+    padding-top: 10px;
+}
+
+.form textarea {
+    padding-top: 10px;
+}
+
+.form .select {
+    width: 80vw;
+    height: 8vh;
+    outline: none;
+    border: none;
+}
+
+.form .submit {
+    background-color: lightslategrey;
+    width: 80vw;
+    height: 8vh;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .submit:hover {
+    background-color: lightgreen;
+}
+
+.form p:last-child {
+    padding-bottom: 20px;
+}
+
+.form input {
+    margin-top: 10px;
+}
+
+.reviewsList {
+    display: block;
+    width: 100vw;
+    padding: 50px 90px;
+}
+
+.reviewUl {
+    list-style: none;
+}
+
+.tabDiv {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.activeTab {
+    color: green;
+    text-decoration: underline;
+}
+
+.tab {
+    cursor: pointer;
+    padding-top: 40px;
+    padding-left: 40px;
 }
